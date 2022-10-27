@@ -1,13 +1,12 @@
 # GlobalLandTemperatures
 
-Predict global land temperatures by country using LSTM.
-THIS IS A 'TIME SERIES' PROJECT INVOLVE DEEP LSTM NETWORK
+### THIS IS A 'TIME SERIES' PROJECT INVOLVE DEEP LSTM NETWORK
 
 This work focuses on application of modern Machine Learning approach of Deep Recurrent Neural Network techniques, to model and predict general time series problem obtained from Climate Change: Earth Surface Temperature Dataset collected from the Kaggle machine learning repository .  The selection of the data that were used in the experiments was focused on land temperature, intending to predict their evolution over time. In this work, 3 models will be used to predict the temperature: Persistence model (as base line), deep (and simple) RNN and Deep LSTM. The model will be trained, tuned, and evaluated on the same train data dets and then will be checked once on the same test set. All the preparation, validation and test-set creation are unique for time series problems and will be explained in detail in this work.
 
 
 ## •	DATA COLLECTION:
-The data understanding phase starts with an initial data collection and proceeds with activities to get familiar with the data, to identify data quality problems, to discover first insights into the data, or to detect interesting subsets to form hypotheses for hidden information. There is a close link between Business Understanding and Data Understanding. The formulation of the data mining problem and the project plan require at least some understanding of the available data [2].
+The data understanding phase starts with an initial data collection and proceeds with activities to get familiar with the data, to identify data quality problems, to discover first insights into the data, or to detect interesting subsets to form hypotheses for hidden information. There is a close link between Business Understanding and Data Understanding. The formulation of the data mining problem and the project plan require at least some understanding of the available data.
 For this project, Climate Change: Earth Surface Temperature dataset, from the Kaggle Repository were used. The data contains 577K records that were collected for 270 years between 1743 and 2013 in 238 countries around the world and features of: (1)Time stamp (equal interval of 1 month between each sample), (2)average temperature- this feature is the target feature (3) uncertainty level of this temperature (4) country.
  Early data was collected by technicians using mercury thermometers, where any variation in the visit time impacted measurements. In the 1940s, the construction of airports caused many weather stations to be moved. In the 1980s, there was a move to electronic thermometers that are said to have a cooling bias. Given this complexity, there are a range of organizations that collate climate trends data. The three most cited land and ocean temperature data sets are NOAA’s MLOST, NASA’s GISTEMP and the UK’s HadCrut. In this dataset Kaggle has repackaged the data from a newer compilation put together by the Berkeley Earth, which is affiliated with Lawrence Berkeley National Laboratory. The Berkeley Earth Surface Temperature Study combines 1.6 billion temperature reports from 16 pre-existing archives. It is nicely packaged and allows for slicing into interesting subsets (for example by country).
 To predict global temperature the data set grouped by time stamp, which yield to new data set with 1860 records (monthly timestamps). The data (as shown in the figures below) shows that the global average temperature went up in a very sharp way between 18th and middle 19th century.
@@ -20,7 +19,7 @@ It appears that before 1857 data mostly represent countries with low average tem
 
 
 ## •	DATA PREPARATION:
-In the “Data Preparation” phase I have collected the relevant data and prepared it for the actual data mining task.  This includes the pre-processing, e.g.  data reduction and filtering, as well as feature generation with respect to the data mining project goal. The data preparation phase covers all activities to construct the final dataset (data that will be fed into the modelling tool(s)) from the initial raw data [2].
+In the “Data Preparation” phase I have collected the relevant data and prepared it for the actual data mining task.  This includes the pre-processing, e.g.  data reduction and filtering, as well as feature generation with respect to the data mining project goal. The data preparation phase covers all activities to construct the final dataset (data that will be fed into the modelling tool(s)) from the initial raw data.
 The dataset I have used for this project is a time-series tabular dataset that needs to be well prepared to fit to the prediction task and to the relevant models.
 These are the preparations I have performed on the aggregate dataset:
 ### 1.	Null values imputation:

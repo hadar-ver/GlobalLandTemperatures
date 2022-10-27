@@ -1,5 +1,7 @@
 # GlobalLandTemperatures
+
 Predict global land temperatures by country using LSTM.
+THIS IS A 'TIME SERIES' PROJECT INVOLVE DEEP LSTM NETWORK
 
 This work focuses on application of modern Machine Learning approach of Deep Recurrent Neural Network techniques, to model and predict general time series problem obtained from Climate Change: Earth Surface Temperature Dataset collected from the Kaggle machine learning repository .  The selection of the data that were used in the experiments was focused on land temperature, intending to predict their evolution over time. In this work, 3 models will be used to predict the temperature: Persistence model (as base line), deep (and simple) RNN and Deep LSTM. The model will be trained, tuned, and evaluated on the same train data dets and then will be checked once on the same test set. All the preparation, validation and test-set creation are unique for time series problems and will be explained in detail in this work.
 
@@ -83,19 +85,6 @@ Auto-regressive process to build new ‘Test’ set: The features of the data co
 
 
 The results are great! Score of 95.7% for Deep LSTM model, 15.6% above the baseline.
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
